@@ -3,7 +3,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 // функція, яка виконує запит на сервер
-import axios from 'axios';
+// import axios from 'axios';
 export async function fetchImages(query) {
   const url = 'https://pixabay.com/api/';
   const params = new URLSearchParams({
