@@ -3,11 +3,11 @@ import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { refs } from '../main';
-
-export function renderImages(data) {
+import axios from 'axios';
+export async function renderImages(data) {
   refs.ulEl.innerHTML = '';
   console.log(data);
-  const images = data.hits;
+  const images = await data.hits;
   if (images.length == 0) {
     iziToast.error({
       title: 'Error',
