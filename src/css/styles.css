@@ -69,6 +69,7 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  margin-left: 15px;
 }
 .btn:hover {
   background: #6c8cff;
