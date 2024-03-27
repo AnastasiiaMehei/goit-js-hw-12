@@ -25,7 +25,6 @@ export async function renderImages(data) {
   lightbox.on('show.simplelightbox', function () {});
   lightbox.refresh();
 }
-
 function createGalleryMarkup(images) {
   return images
     .map(
@@ -51,8 +50,7 @@ function createGalleryMarkup(images) {
         <li><h3>Downloads</h3><p>${downloads}</p><li/></ul>
       </a>
     </li>
-     
-  `
+    `
     )
     .join('');
 }
