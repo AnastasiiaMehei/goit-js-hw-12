@@ -42,6 +42,8 @@ function createGalleryMarkup(images) {
       <a class="gallery-link" href="${largeImageURL}">
         <img       
           class="gallery-image"
+          width="1280"
+          height="152"
           src="${webformatURL}"
           alt="${tags}"
         />
