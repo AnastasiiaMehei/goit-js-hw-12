@@ -30,7 +30,6 @@ searchBtn.addEventListener('click', async () => {
   try {
     if (query) {
       loadButton.className = '';
-      refs.ulEl.innerHTML = '<div class="loader"></div>';
       const posts = await fetchImages(query);
       renderImages(posts);
       loader.className = 'loader visually-hidden';
