@@ -6,7 +6,6 @@ import { fetchImages } from '../src/js/pixabay-api';
 import { renderImages } from './js/render-function';
 export const refs = {
   formEl: document.querySelector('form'),
-  formCont: document.querySelector('form-container'),
   inputEl: document.querySelector('input.form-control'),
   ulEl: document.querySelector('ul.gallery'),
 };
@@ -22,8 +21,8 @@ refs.inputEl.addEventListener('input', e => {
   query = refs.inputEl.value.trim();
   refs.ulEl.innerHTML = '';
 });
-const fetchUsersBtn = document.querySelector('.btn');
-fetchUsersBtn.addEventListener('click', async () => {
+const searchBtn = document.querySelector('.btn');
+searchBtn.addEventListener('click', async () => {
   refs.ulEl.innerHTML = '';
   loader.className = 'loader';
   page = 1;

@@ -5,7 +5,6 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import { refs } from '../main';
 
 export async function renderImages(data) {
-  refs.ulEl.innerHTML = '';
   console.log(data);
   const images = data.hits;
   // console.log(data.hits);
@@ -51,8 +50,7 @@ function createGalleryMarkup(images) {
         <li><h3>Comments</h3><p>${comments}</p><li/>  
         <li><h3>Downloads</h3><p>${downloads}</p><li/></ul>
       </a>
-    </li>
-     
+    </li>   
   `
     )
     .join('');
