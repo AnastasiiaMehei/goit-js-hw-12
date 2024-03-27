@@ -20,8 +20,8 @@ refs.inputEl.addEventListener('input', e => {
   e.preventDefault();
   query = refs.inputEl.value.trim();
   refs.ulEl.innerHTML = '';
-  // loaderDiv.className = "loader visually-hidden";
-  // loadButtonButton
+  loaderDiv.className = 'loader visually-hidden';
+  loadButtonButton.className = 'loader visually-hidden';
 });
 const searchBtn = document.querySelector('.btn');
 searchBtn.addEventListener('click', async () => {
